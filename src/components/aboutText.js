@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { StyledLink } from './link'
 
 const StyledBioText = styled.div`
   grid-column: 2 / 9;
@@ -22,11 +23,11 @@ const AboutText = () => (
       The most important part of me I can offer is my passionate desire to be helpful to others. I
       love working with great people and doing great things. I'm a great listener. I'm relentlessly
       creative, curious and hard working. I love pushing myself to master new skills. I love writing
-      (especially code) and anything that keeps me creating and learning online. I also have a
-      pretty cheeky sense of humour.
+      code and anything that keeps me creating and learning online. I also have a pretty cheeky
+      sense of humour.
     </p>
 
-    <h3>What can I do?</h3>
+    <h3>Me in 30 seconds</h3>
     <ul>
       <li>10 years ago I started learning front end web development (Wordpress, HTML, CSS)</li>
       <li>
@@ -42,7 +43,7 @@ const AboutText = () => (
         Lauder.
       </li>
       <li>
-        I learned the value of stellar customer service, education-based marketting and the power of
+        I learned the value of stellar customer service, education-based marketing and the power of
         story telling.
       </li>
       <li>
@@ -60,7 +61,21 @@ const AboutText = () => (
       <li>I'm addicted to learning.</li>
       <li>I've travelled to 9 countries and lived in 9 different cities.</li>
       <li>
-        I love my laptop, my text editor, Affinity Photo, Danner Boots,{' '}
+        I love my laptop,
+        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+          {' '}
+          my text editor,{' '}
+        </a>
+        <a
+          href="https://affinity.serif.com/en-gb/photo/desktop/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Affinity Photo,{' '}
+        </a>
+        <a href="https://www.danner.com/" target="_blank" rel="noopener noreferrer">
+          Danner Boots,{' '}
+        </a>
         <a
           href="https://www.biggerbolderbaking.com/sour-gummy-bears/"
           target="_blank"
@@ -99,6 +114,12 @@ const AboutText = () => (
         </a>
       </li>
     </ul>
+
+    <p>For more information on my developer skills please check out &mdash;</p>
+    <StyledLink to="/devskills">My Dev Skills >></StyledLink>
+
+    <p>To see a few of my favorite projects check out &mdash;</p>
+    <StyledLink to="/portfolio">My Portfolio >></StyledLink>
   </StyledBioText>
 )
 

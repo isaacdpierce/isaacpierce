@@ -8,7 +8,7 @@ export const StyledBrickBox = styled.div`
   grid-column: span 7 / 13;
   grid-row: 2 / 3;
   height: 42vh;
-
+  background: transparent;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
@@ -16,7 +16,6 @@ export const StyledBrickBox = styled.div`
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
-  background: transparent;
   font-size: 0;
   perspective: 500px;
 
@@ -35,7 +34,7 @@ export const StyledBrick = styled.div`
   border-left: 1px solid #2c2c2c;
   border-top: 1px solid #2c2c2c;
   border-bottom: 1px solid #000;
-  box-shadow: -1px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 2px 2px 2px rgba(0, 0, 0, 0.3);
 
   z-index: 199;
   background: url(${backgroundTexture});
@@ -52,6 +51,7 @@ export const StyledBrick = styled.div`
     background: radial-gradient(circle at 50% 30%, #164c8c, #0a1e38);
     box-shadow: inset 0px 2px 1px 1px rgba(0, 0, 0, 0.6);
     border: 1px solid #0d0d0d;
+    border-left: 2px solid #000;
     border-radius: 3px;
     display: flex;
     justify-self: flex-start;

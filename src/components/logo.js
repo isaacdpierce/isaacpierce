@@ -11,11 +11,12 @@ const LogoWrapper = styled.div`
 
 const StyledLogoLink = styled(Link)`
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 100;
-  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
   color: #999;
   padding: 0 15px;
   transition: filter 0.3s ease-in-out;
+  text-shadow: 1px 1px 1px #000;
   &:hover {
     filter: brightness(125%);
     color: #999;
@@ -24,8 +25,6 @@ const StyledLogoLink = styled(Link)`
 const StyledLogoImage = styled.img`
   height: 33px;
   margin: 10px 0 0 1rem;
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(252, 252, 252, 0.7);
-  -moz-box-shadow: 0px 0px 1px 1px rgba(252, 252, 252, 0.7);
   box-shadow: 0px 0px 1px 1px rgba(252, 252, 252, 0.7);
   transition: all 0.2s ease-in-out;
   &:hover {
